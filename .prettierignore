@@ -1,0 +1,23 @@
+# Public directory
+public
+
+# Log files
+logs
+*.log
+npm-debug.log*
+
+# Node Dependencies
+node_modules/
+package.json
+package-lock.json
+
+# Cache
+.npm
+.cache
+
+# dotenv environment variables file
+.env*
+
+# Git dependencies
+.git*
+
