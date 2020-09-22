@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby + Bloomer + Headless WordPress Starter`,
+    title: `ob-frontend`,
     description: `Headless WordPress Starter`,
     author: `None`,
     siteUrl: process.env.SITE_URL,

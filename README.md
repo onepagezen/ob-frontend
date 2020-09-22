@@ -22,7 +22,7 @@
 + [License](#license)
 
 ## Overview
-ob-frontend is a modern implementation of the WordPress frontend as a [single-page application (SPA)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps#when-to-choose-spas).  This template, developed and packaged as a [Gatsby starter](https://www.gatsbyjs.com/docs/starters/), is an ideal solution for developers looking for the ease-of-use and flexibility that comes with using WordPress as a [CMS](https://www.hostinger.com/tutorials/what-is-wordpress), paired with the familiar development experience and modern UI features of a [React](https://reactjs.org/)/[GraphQL](https://graphql.org/) application.  This implementation attempts to closely mirror many of the core features and functionality of the WordPress UI, such as nested comments, post sidebar layout, and a mailing list widget.
+**ob-frontend** is a modern implementation of the WordPress frontend as a [single-page application (SPA)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps#when-to-choose-spas).  This template, developed and packaged as a [Gatsby starter](https://www.gatsbyjs.com/docs/starters/), is an ideal solution for developers looking for the ease-of-use and flexibility that comes with using WordPress as a [CMS](https://www.hostinger.com/tutorials/what-is-wordpress), paired with the familiar development experience and modern UI features of a [React](https://reactjs.org/)/[GraphQL](https://graphql.org/) application.  This implementation attempts to closely mirror many of the core features and functionality of the WordPress UI, such as nested comments, post sidebar layout, and a mailing list widget.
 
 ## Demo
 
@@ -49,9 +49,6 @@ ob-frontend is a modern implementation of the WordPress frontend as a [single-pa
 + [Apollo Client](https://www.apollographql.com/docs/react/) (tested with 2.6.10) 
 
 ## Quick Start
-#### Introduction 
-TEST TEST TEST
-
 #### 1.  Deploy a WordPress backend
 This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice. In the above demo, the WordPress backend is deployed on a GCP Compute Engine f1-micro VM Instance.  
 
@@ -63,7 +60,7 @@ Use the Gatsby CLI to create a new site, specifying the ob-frontend starter.
 
 ```sh
 # Create a new Gatsby site using the ob-frontend starter
-gatsby new blog https://github.com/alxshelepenok/gatsby-starter-lumen
+gatsby new blog https://github.com/onepagezen/ob-frontend
 ```
 
 #### 4.  Create environment variable files
@@ -101,7 +98,12 @@ MAILCHIMP_ENDPOINT=https://example.us17.list-manage.com/subscribe/post?u=0893ac8
 ```
 
 ## Deploy with Netlify
-If deploying with Netlify, make sure to add the production environment variables to your Netlify build environment.  One option is to add them in your site dashboard under **Settings > Build & deploy > Environment > Environment variables**.  
+#### 1.  Deploy the site
+Use the **Deploy with Netlify** button to quickly deploy a website based on this starter.  
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/onepagezen/ob-frontend" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>  
+
+#### 2.  Configure environment variables
+When deploying with Netlify, make sure to add the production environment variables to your Netlify build environment.  One option is to add them in your site dashboard under **Settings > Build & deploy > Environment > Environment variables**.  
 
 <img alt="netlify-environment-variables" title="netlify-environment-variables" src="./src/images/netlify-env-vars.png" width="400">
 
