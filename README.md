@@ -22,7 +22,7 @@
 + [License](#license)
 
 ## Overview
-ob-frontend is a modern implementation of the WordPress frontend as a [single-page application (SPA)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps#when-to-choose-spas).  This template, developed and packaged as a [Gatsby starter](https://www.gatsbyjs.com/docs/starters/), is an ideal solution for developers looking for the ease-of-use and flexibility that comes with using WordPress as a [CMS](https://www.hostinger.com/tutorials/what-is-wordpress), paired with the familiar development experience and modern UI features of a [React](https://reactjs.org/)/[GraphQL](https://graphql.org/) application.  This implementation attempts to closely mirror many of the core features of the WordPress UI, such as nested comments, post sidebar layout, and a mailing list widget.
+ob-frontend is a modern implementation of the WordPress frontend as a [single-page application (SPA)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps#when-to-choose-spas).  This template, developed and packaged as a [Gatsby starter](https://www.gatsbyjs.com/docs/starters/), is an ideal solution for developers looking for the ease-of-use and flexibility that comes with using WordPress as a [CMS](https://www.hostinger.com/tutorials/what-is-wordpress), paired with the familiar development experience and modern UI features of a [React](https://reactjs.org/)/[GraphQL](https://graphql.org/) application.  This implementation attempts to closely mirror many of the core features and functionality of the WordPress UI, such as nested comments, post sidebar layout, and a mailing list widget.
 
 ## Demo
 
@@ -145,7 +145,7 @@ A WordPress backend is technically no different from a regular WordPress install
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2016-2020 CopyrightHolder
+Copyright (c) 2016-2020 One Page Zen Systems, LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
