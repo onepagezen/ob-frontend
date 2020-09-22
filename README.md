@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="ob-frontend" title="ob-frontend" src="./src/images/ob-frontend-red-logo.png" width="400">
+    <img alt="ob-frontend" title="ob-frontend" src="./src/images/ob-frontend-beta-logo.png" width="400">
 </h1>
 
 <h4 align="center">
