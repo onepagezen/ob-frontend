@@ -31,7 +31,7 @@ export default class navbar extends Component {
           {/* Site title link */}
           <NavbarBrand>
             <Link to="/" className="navbar-item">
-              {this.props.siteTitle}
+              <img width="300px" src="https://storage.googleapis.com/ob-frontend/ob-frontend-long-logo.png"/>
             </Link>
             <NavbarBurger
               isActive={this.state.isOpen}

@@ -23,7 +23,7 @@ const About = () => (
           <Column>
             {/* Page title */}
             <Title isSpaced>About</Title>
-            <Subtitle>This is the second page.</Subtitle>
+            <Subtitle>This is the about page.</Subtitle>
             {/* Back to homepage button */}
             <Link to="/">
               <Button isColor="primary" className="is-rounded" id="is-spaced">

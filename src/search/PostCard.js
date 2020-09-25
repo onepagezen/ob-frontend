@@ -21,6 +21,7 @@ return (
 			<Container>
 				<h3 style={{ marginBottom: 0 }} dangerouslySetInnerHTML={{ __html: title }} />
 				<p style={{ marginBottom: "1em", fontSize: ".9em", color: "grey" }}>Written by {authorName} on {formatDate(date)}</p>
+				{console.log('this is author', authorName)}
 			</Container>
 			<Columns>
 				<Column isSize='1/4'>

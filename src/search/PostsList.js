@@ -80,7 +80,7 @@ const PostList = ({ data, error, loading, fetchMore }) => {
                     variables: {
                       first: null,
                       after: null,
-                      last: 5,
+                      last: 3,
                       before: posts.pageInfo.startCursor || null,
                       tag: null
                     },
@@ -92,12 +92,13 @@ const PostList = ({ data, error, loading, fetchMore }) => {
                 &laquo; Previous
               </Button>
             ) : null}
+            &nbsp;
             {posts.pageInfo.hasNextPage ? (
               <Button isColor='primary'
                 onClick={() => {
                   fetchMore({
                     variables: {
-                      first: 5,
+                      first: 3,
                       after: posts.pageInfo.endCursor || null,
                       last: null,
                       before: null,
@@ -124,7 +125,7 @@ const Posts = ({ searchQuery, tag }) => {
   const variables = {
     searchQuery: searchQuery,
     tag: tag,
-    first: 5,
+    first: 3,
     last: null,
     after: null,
     before: null

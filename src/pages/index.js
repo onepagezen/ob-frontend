@@ -14,7 +14,7 @@ import {
   Title
 } from "bloomer"
 import MailingList from "../mailchimp/mailing-list"
-import { FcGallery } from "react-icons/fc"
+import { FcReading, FcDecision, FcGlobe} from "react-icons/fc"
 import Posts from "../search/PostsList"
 
 const IndexPage = ({ data }) => {
@@ -25,12 +25,12 @@ const IndexPage = ({ data }) => {
           <Container>
             <Columns>
               <Column isSize='1/3'>  
-                  <img alt="placeholder" src="https://via.placeholder.com/350x225"/>
+                  <img className="nutty-buddy" alt="placeholder" src="https://storage.googleapis.com/ob-frontend/squirrel-light-frame.png"/>
               </Column>
               <Column>
-                <div>
-                  <h1>Your null awaits!</h1>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+                <div className="nutty-buddies-intro">
+                  <h1>Welcome to Nutty Buddies!</h1>
+                  <p>Nutty Buddies is a squirrel-themed demo site for ob-frontend - a modern implementation of the WordPress frontend as a single-page application (SPA). This template, developed and packaged as a Gatsby starter, is a free and open-source solution for developers looking to modernize their WordPress sites.</p>
                 </div>
                 <MailingList/>
               </Column>
@@ -44,27 +44,27 @@ const IndexPage = ({ data }) => {
               {/* Card 1 */}
               <Column isSize='1/3'>  
                 <Box className="content-centered">
-                  <FcGallery size={80}/>
-                    <h2>null for beginners</h2>
-                    <p>This is a paragraph</p>
+                  <FcReading size={80}/>
+                    <h2>Squirrel guides</h2>
+                    <p>Learn all about what it takes to care for domesticated squirrels!</p>
                   <Button isColor="primary">Get started</Button>
                 </Box>
               </Column>
               {/* Card 2 */}
               <Column isSize='1/3'>
                 <Box className="content-centered">
-                  <FcGallery size={80}/>
-                    <h2>null care guides</h2>
-                    <p>This is a paragraph</p>
+                  <FcDecision size={80}/>
+                    <h2>Squirrel FAQ</h2>
+                    <p>Your squirrel-releated questions answered by professionals!</p>
                   <Button isColor="primary">Get started</Button>
                 </Box>
               </Column>
               {/* Card 3 */}
               <Column isSize='1/3'>
                 <Box className="content-centered">
-                  <FcGallery size={80}/>
-                    <h2>null essential tools</h2>
-                    <p>This is a paragraph</p>
+                  <FcGlobe size={80}/>
+                    <h2>Squirrel locator</h2>
+                    <p>Experience the migratory patterns of squirrels in real time!</p>
                   <Button isColor="primary">Get started</Button>
                 </Box>
               </Column>

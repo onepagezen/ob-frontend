@@ -1,5 +1,6 @@
 import React from "react"
 import { Footer, Container, Content, Icon, Columns, Column } from "bloomer"
+import { FcApproval } from "react-icons/fc"
 import SocialIcons from "../components/icons"
 import MailingList from "../mailchimp/mailing-list"
 
@@ -7,10 +8,16 @@ const MainFooter = () => {
   return (
     <Footer>
       <Container>
-        <Columns>
+        <Columns className="is-reversed-touch is-reversed-mobile">
           <Column>
             {/* Brand logo */}
-            <img alt="orchidboy logo" width="50%" src="https://storage.googleapis.com/opzsys_static/orchidboy_purple_text.png"/>
+            <a href="https://github.com/onepagezen/ob-frontend">
+              <img 
+                className="footer-logo" 
+                alt="ob-frontend-logo-grey" 
+                src="https://storage.googleapis.com/ob-frontend/ob-frontend-logo-grey.png"
+              />
+            </a>
             {/* Social icons */}
             <Content>
               <SocialIcons/>
@@ -32,38 +39,20 @@ const MainFooter = () => {
             {/* Built with Gatsby, Bulma, and Bloomer */}
             <Content isSize="small">
               <p>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a
-                  href="https://www.gatsbyjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Gatsby
+                Copyright {new Date().getFullYear()}&nbsp;
+                <a href="https://opzsys.com"> 
+                  One Page Zen Systems, LLC
                 </a>
-                ,{" "}
-                <a
-                  href="https://bulma.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Bulma
-                </a>{" "}
-                and{" "}
-                <a
-                  href="https://bloomer.js.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Bloomer Components
-                </a>{" "}
               </p>
             </Content>
           </Column>
           <Column>
             <div>
-              <h1>Your null awaits!</h1>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+              <h1>Become a squirrel expert!</h1>
+              <p>Our weekly newsletter is filled with tons of useful squirrel care tips, as well as the week's funniest squirrel memes.  Signup today and receive:</p>
+              <p><FcApproval/><strong> Squirrel guide packed with squirrel care tips</strong></p>
+              <p><FcApproval/><strong> Icon pack filled with furry critter icons</strong></p>
+              <p><FcApproval/><strong> Recipe bundle with 100+ acorn recipes</strong></p>
             </div>
             <MailingList/>
           </Column>

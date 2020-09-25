@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ob-frontend",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter to get up and developing quickly with WordPress on Gatsby",
   "version": "0.1.0",
   "author": "None",
   "dependencies": {
@@ -39,7 +39,9 @@
     "prettier": "1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme"
   ],
   "license": "MIT",
   "scripts": {
