@@ -814,6 +814,23 @@ div.comment-list a {
 .footer {
   padding-bottom: 1rem;
 }
+// Styling for post metadata icons
+.meta-icon {
+  font-size: 12px;
+  margin-right: 5px;
+}
+// Styling for metadata text
+.meta-text {
+  margin-bottom: 1em; 
+  text-transform: uppercase;
+  font-size: .6em;
+  color: grey;
+  text-align: center;
+  display: inline-block;
+}
+.meta-section {
+  margin-right: 20px;
+}
 // Reverses stacking order of footer columns
 @media(max-width: $desktop) {
   .columns.is-reversed-touch {

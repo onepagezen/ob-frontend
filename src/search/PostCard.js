@@ -6,22 +6,26 @@ import {
   Columns,
   Box,
 } from "bloomer"
+import moment from 'moment';
+import { FaClock, FaUser, FaComment } from 'react-icons/fa'
 
-
-// Helper function for formatting dates.
-const formatDate = date => new Date( date ).toDateString();
 
 const PostCard = ({post}) => {
   const { postId, title, date, excerpt, slug, author, featuredImage } = post;
-  const { name: authorName } = author;
 
 return (
 	<Box key={postId}>
 		<Link to={`/posts/` + slug} style={{ color: "black", textDecoration: "none" }}>
 			<Container>
-				<h3 style={{ marginBottom: 0 }} dangerouslySetInnerHTML={{ __html: title }} />
-				<p style={{ marginBottom: "1em", fontSize: ".9em", color: "grey" }}>Written by {authorName} on {formatDate(date)}</p>
-				{console.log('this is author', authorName)}
+				<h3 style={{ marginBottom: "10px" }} dangerouslySetInnerHTML={{ __html: title }} />
+				<p className="meta-text">
+          {/* Meta date section */}
+          <span className="meta-section"><FaClock className="meta-icon"/>{moment(date).format('MMMM D, YYYY')}</span>
+          {/* Meta author section */}
+          <span className="meta-section"><FaUser className="meta-icon"/>{author.node.name}</span>
+          {/* Meta comments section */}
+          <span className="meta-section"><FaComment className="meta-icon"/>Comments</span>
+        </p>
 			</Container>
 			<Columns>
 				<Column isSize='1/4'>
