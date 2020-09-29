@@ -1,8 +1,8 @@
 {
   "name": "ob-frontend",
-  "private": true,
+  "private": false,
   "description": "A headless WordPress starter theme built with Gatsby",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "author": "One Page Zen Systems, LLC <support@onepagezen.com> (http://opzsys.com)",
   "dependencies": {
     "anchorate": "^1.2.3",
@@ -54,9 +54,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/onepagezen/ob-frontend"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/onepagezen/ob-frontend/issues"
   }
 }

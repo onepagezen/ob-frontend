@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="ob-frontend" title="ob-frontend" src="./src/images/ob-frontend-beta-logo.png" width="400">
+    <img alt="ob-frontend" title="ob-frontend" src="https://storage.googleapis.com/ob-frontend/ob-frontend-app-screenshot-3.pngob-frontend-beta-logo.png" width="400">
 </h1>
 
 <h4 align="center">
@@ -123,7 +123,7 @@ Use the **Deploy with Netlify** button to quickly deploy a website based on this
 #### 2.  Configure environment variables
 When deploying with Netlify, make sure to add the production environment variables to your Netlify build environment.  One option is to add them in your site dashboard under **Settings > Build & deploy > Environment > Environment variables**.  
 
-<img alt="netlify-environment-variables" title="netlify-environment-variables" src="./src/images/netlify-env-vars.png" width="400">
+<img alt="netlify-environment-variables" title="netlify-environment-variables" src="https://storage.googleapis.com/ob-frontend/netlify-env-vars.png" width="400">
 
 ## Directory Structure
 
