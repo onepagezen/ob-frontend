@@ -1,8 +1,8 @@
-<h1 align="center">
-    <img alt="ob-frontend" title="ob-frontend" src="https://storage.googleapis.com/ob-frontend/ob-frontend-beta-logo.png" width="400">
+<h1 align="left">
+    <img alt="ob-frontend" title="ob-frontend" src="https://storage.googleapis.com/ob-frontend/ob-frontend-beta-logo.png" width="400"/>
 </h1>
 
-<h4 align="center">
+<h4 align="left">
     <strong>ob-frontend</strong> is a <a href="https://www.gatsbyjs.com/docs/glossary/headless-wordpress/">headless</a> WordPress starter theme built with <a href="https://www.gatsbyjs.com/docs/">Gatsby</a>.
 </h4>
 
