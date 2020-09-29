@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="ob-frontend" title="ob-frontend" src="https://storage.googleapis.com/ob-frontend/ob-frontend-app-screenshot-3.pngob-frontend-beta-logo.png" width="400">
+    <img alt="ob-frontend" title="ob-frontend" src="https://storage.googleapis.com/ob-frontend/ob-frontend-beta-logo.png" width="400">
 </h1>
 
 <h4 align="center">
