@@ -15,19 +15,32 @@
 + [Quick Start](#quick-start)
 + [Deploy with Netlify](#deploy-with-netlify)
 + [Folder Structure](#folder-structure)
-+ [Web Performance Tests](#web-performance-tests)
 + [Credits](#credits)
 + [Contributors](#contributors)
-+ [Glossary](#glossary)
 + [License](#license)
 
 ## Overview
 **ob-frontend** is a modern implementation of the WordPress frontend as a [single-page application (SPA)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps#when-to-choose-spas).  This template, developed and packaged as a [Gatsby starter](https://www.gatsbyjs.com/docs/starters/), is a [solution](https://searchitchannel.techtarget.com/definition/solution) for developers looking for the ease-of-use and flexibility that comes with using WordPress as a [CMS](https://www.hostinger.com/tutorials/what-is-wordpress), paired with the familiar development experience and modern UI features of a [React](https://reactjs.org/)/[GraphQL](https://graphql.org/) implementation.  The **ob-frontend** Gatsby Starter attempts to closely mirror many of the core features and functionality of the familiar WordPress UI, such as nested comments, post sidebar layout, and a mailing list widget.
 
 ## Demo
-
+View a live demo of this application [here](https://ob-frontend.netlify.app/).
 
 ## Screenshots
+<h1 align="left">
+    <img alt="ob-frontend-screenshot-1" title="ob-frontend-screenshot-1" src="https://storage.googleapis.com/ob-frontend/ob-frontend-app-screenshot-1.png" width="600">
+</h1>
+
+<h1 align="left">
+    <img alt="ob-frontend-screenshot-2" title="ob-frontend-screenshot-2" src="https://storage.googleapis.com/ob-frontend/ob-frontend-app-screenshot-2.png" width="600">
+</h1>
+
+<h1 align="left">
+    <img alt="ob-frontend-screenshot-3" title="ob-frontend-screenshot-3" src="https://storage.googleapis.com/ob-frontend/ob-frontend-app-screenshot-3.png" width="600">
+</h1>
+
+<h1 align="left">
+    <img alt="ob-frontend-screenshot-4" title="ob-frontend-screenshot-4" src="https://storage.googleapis.com/ob-frontend/ob-frontend-app-screenshot-4.png" width="600">
+</h1>
 
 
 ## Features
@@ -79,7 +92,7 @@ touch .env.development .env.production
 ```
 
 #### 5.  Add development environment variables
-Add the following environment variables to your **.env.development** file, making sure to replace **example.com** with your own domain name, and **MAILCHIMP_ENDPOINT** with the endpoint of your Mailchimp mailing list:
+Add the following environment variables to your **.env.development** file, making sure to replace **example.com** with your own domain name, and **MAILCHIMP_ENDPOINT** with the [form action URL](https://secomapp.zendesk.com/hc/en-us/articles/360031503791-How-to-find-the-MailChimp-Form-Action-URL-) of your MailChimp mailing list:
 ```sh
 SITE_URL=https://localhost:8000
 BASE_URL=cms.example.com
@@ -127,8 +140,6 @@ When deploying with Netlify, make sure to add the production environment variabl
 └──📂 templates # dynamically generate posts and pages
 ```
 
-## Web Performance Tests
-
 ## Credits
 + [Gatsby Starter Bloomer](https://github.com/zlutfi/gatsby-starter-bloomer) by [Zlutfi](https://github.com/zlutfi)
 + [Forward and Backward Pagination with WPGraphQL](https://www.wpgraphql.com/2020/03/26/forward-and-backward-pagination-with-wpgraphql/) by [Jason Bahl](https://github.com/jasonbahl)  
@@ -140,13 +151,9 @@ When deploying with Netlify, make sure to add the production environment variabl
 
 
 ## Contributors
-[<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/leronamin) |[<img alt="alehel" src="https://avatars2.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80) |
+[<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80) |[<img alt="alehel" src="https://avatars2.githubusercontent.com/u/32469926?v=4&s=117" width="117">](https://github.com/leronamin) |
 :---: |:---: |
-[petejos80](https://github.com/petejos80) |[petejos80](https://github.com/petejos80) |
-
-## Glossary
-#### WordPress backend
-A WordPress backend is technically no different from a regular WordPress install.  The only difference being that instead of using your WordPress website as both a frontend (what users see) and backend (what admins see), you are strictly using your WordPress website as a backend (for managing pages, posts, comments, etc.).  The frontend portion of your WordPress website is therefor handled by the ob-frontend theme, which uses GraphQL to fetch data from your WordPress backend, and display it to your website visitors on the frontend.
+[petejos80](https://github.com/petejos80) |[leronamin](https://github.com/leronamin) |
 
 ## License
 The MIT License (MIT)

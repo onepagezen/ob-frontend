@@ -1,9 +1,9 @@
 {
   "name": "ob-frontend",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with WordPress on Gatsby",
-  "version": "0.1.0",
-  "author": "None",
+  "description": "A headless WordPress starter theme built with Gatsby",
+  "version": "1.0.0-beta",
+  "author": "One Page Zen Systems, LLC <support@onepagezen.com> (http://opzsys.com)",
   "dependencies": {
     "anchorate": "^1.2.3",
     "apollo-boost": "^0.4.7",
