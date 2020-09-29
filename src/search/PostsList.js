@@ -30,6 +30,7 @@ const PostsQuery = gql`
           title
           date
           excerpt
+          commentCount
           slug
           author {
             node {
@@ -80,7 +81,7 @@ const PostList = ({ data, error, loading, fetchMore }) => {
                     variables: {
                       first: null,
                       after: null,
-                      last: 3,
+                      last: 5,
                       before: posts.pageInfo.startCursor || null,
                       tag: null
                     },
@@ -92,13 +93,12 @@ const PostList = ({ data, error, loading, fetchMore }) => {
                 &laquo; Previous
               </Button>
             ) : null}
-            &nbsp;
             {posts.pageInfo.hasNextPage ? (
               <Button isColor='primary'
                 onClick={() => {
                   fetchMore({
                     variables: {
-                      first: 3,
+                      first: 5,
                       after: posts.pageInfo.endCursor || null,
                       last: null,
                       before: null,
@@ -125,7 +125,7 @@ const Posts = ({ searchQuery, tag }) => {
   const variables = {
     searchQuery: searchQuery,
     tag: tag,
-    first: 3,
+    first: 5,
     last: null,
     after: null,
     before: null

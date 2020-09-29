@@ -19,9 +19,12 @@ class AllPosts extends Component {
       <Layout>
         <Section>
           <Container>
-            <SEO title="Posts" keywords={[`gatsby`, `application`, `react`]} />
-              <Title isSpaced>Posts</Title>
-              <Posts searchQuery={''} />  
+            <SEO 
+              title="Posts" 
+              keywords={[`gatsby`, `application`, `react`]} 
+            />
+            <Title isSpaced>Posts</Title>
+            <Posts searchQuery={''} />  
           </Container>
         </Section>
       </Layout>

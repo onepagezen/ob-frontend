@@ -13,7 +13,11 @@ import {
 export default class hero extends Component {
   render() {
     return (
-      <Hero isColor="primary" isSize="medium" textalign="left">
+      <Hero 
+        isColor="primary" 
+        isSize="medium" 
+        textalign="left"
+      >
         <HeroBody>
           <Container>
             <Columns>

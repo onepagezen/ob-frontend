@@ -16,9 +16,12 @@ const Search = () => (
 <Layout>
     <Section>
       <Container>
-        <SEO title="Posts" keywords={[`gatsby`, `application`, `react`]} />
-          <Title isSpaced>Search</Title>
-          <PostsSearch />     
+        <SEO 
+          title="Posts" 
+          keywords={[`gatsby`, `application`, `react`]} 
+        />
+        <Title isSpaced>Search</Title>
+        <PostsSearch />     
       </Container>
     </Section>
   </Layout>

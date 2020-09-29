@@ -33,7 +33,11 @@ const SocialIcons = () => {
   
   const icons = data.map(function(d, idx){
     return (
-      <a className="icon-row" href={d.url} key={idx}>
+      <a 
+        className="icon-row" 
+        href={d.url} 
+        key={idx}
+      >
         <Icon className={d.icon}/>
       </a>
     )}
