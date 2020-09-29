@@ -21,7 +21,9 @@ const BlogPostTemplate = ({ data }) => (
     />
     <Section className="has-background-white">
       <Container>
-      <h1 style={{ marginBottom: 0 }} >{data.wordpressPost.title}</h1>
+      <h1 style={{ marginBottom: 0 }}>
+        {data.wordpressPost.title}
+      </h1>
         <p>
           Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
         </p>

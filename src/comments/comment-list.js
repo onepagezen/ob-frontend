@@ -151,17 +151,21 @@ class CommentList extends React.Component {
                             )
                           )}
 
-                          {/* Handle button click*/}
-                          {((d.parent === null && openId !== d.commentId) || (d.parent === null && this.state.showing === false)) ?
+                          
+                          {// Handle button click
+                          ((d.parent === null && openId !== d.commentId) || (d.parent === null && this.state.showing === false)) ?
                             <a className="comment-reply-link" onClick={() => this.setState({ showing: true, openId: d.commentId })}>
                               {(showing && (openId === d.commentId) ? "Reply" : "Reply")}
                             </a> 
-                          : null}
+                          : null
+                          }
 
-                          {/* Display comment form*/}
-                          {(showing === true && d.parent === null && openId === d.commentId)
+                          
+                          {// Display comment form
+                          (showing === true && d.parent === null && openId === d.commentId)
                             ? <CommentForm postId={this.props.postId} parent={d.commentId} action={this.handler}/>
-                          : null}
+                          : null
+                          }
 
                         </div>
                       ))}

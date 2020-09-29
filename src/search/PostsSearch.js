@@ -20,7 +20,10 @@ class PostsSearch extends Component {
 
     return (
       <div className="posts-search">
-        <form className="posts-search__form" onSubmit={handleSubmit}>
+        <form 
+          className="posts-search__form" 
+          onSubmit={handleSubmit}
+        >
         <Input autoFocus          
             type="text"
             className="posts-search__search-field"
@@ -31,7 +34,9 @@ class PostsSearch extends Component {
           />
         </form>
         {searchQuery &&
-          <Posts searchQuery={searchQuery}/>
+          <Posts 
+            searchQuery={searchQuery}
+          />
         }
       </div>
     );
