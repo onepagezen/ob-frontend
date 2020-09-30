@@ -5,8 +5,8 @@
 <h4 align="left">
     <strong>ob-frontend</strong> is a <a href="https://www.gatsbyjs.com/docs/glossary/headless-wordpress/">headless</a> WordPress starter theme built with <a href="https://www.gatsbyjs.com/docs/">Gatsby</a>.
 </h4>  
-  
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bca3f947-6447-44a1-b77b-a8dadbf4c843/deploy-status)](https://app.netlify.com/sites/ob-frontend/deploys)
+
+![npm](https://img.shields.io/npm/v/ob-frontend)&nbsp;&nbsp;![GitHub](https://img.shields.io/github/license/onepagezen/ob-frontend)&nbsp;&nbsp;![GitHub issues](https://img.shields.io/github/issues-raw/onepagezen/ob-frontend)&nbsp;&nbsp;![GitHub repo size](https://img.shields.io/github/repo-size/onepagezen/ob-frontend)
 
 
   
