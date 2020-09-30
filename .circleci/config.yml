@@ -45,7 +45,7 @@ jobs:
           command: ./node_modules/.bin/netlify deploy --dir=public
   release:
     executor: node-executor
-    working_directory: ~/repo
+    working_directory: ~/ob-frontend
     steps:
       - gatsby-build
       - run:
