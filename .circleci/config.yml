@@ -39,10 +39,10 @@ jobs:
     executor: node-executor
     working_directory: ~/ob-frontend
     steps:
-      - gatsby-build
       - run:
-          name: install netlify cli
-          command: sudo npm install netlify-cli -g
+        name: install netlify cli
+        command: sudo npm install netlify-cli -g
+      - gatsby-build
       - run:
           name: Netlify Deploy
           command: ./node_modules/.bin/netlify deploy --dir=public
@@ -50,10 +50,10 @@ jobs:
     executor: node-executor
     working_directory: ~/ob-frontend
     steps:
+      - run:
+        name: Netlify Deploy
+        command: ./node_modules/.bin/netlify deploy --prod --dir=public
       - gatsby-build
       - run:
           name: install netlify cli
           command: sudo npm install netlify-cli -g
-      - run:
-          name: Netlify Deploy
-          command: ./node_modules/.bin/netlify deploy --prod --dir=public
