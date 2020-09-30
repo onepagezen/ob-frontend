@@ -29,8 +29,8 @@ return (
       style={{ color: "black", textDecoration: "none" }}
     >
 			<Container>
-        <h3 
-          style={{ marginBottom: "10px" }} 
+        <h3
+          className="post-card-header"
           dangerouslySetInnerHTML={{ __html: title }} 
         />
 				<p className="meta-text">

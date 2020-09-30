@@ -127,21 +127,21 @@ class CommentForm extends React.Component {
 						<Field>
 						<Label htmlFor="author">Name *</Label>
 							<Control>
-								<Input name="author" value={this.state.author} maxLength="80" onChange={this.handleInputChange} />
+								<Input label="author" name="author" value={this.state.author} maxLength="80" onChange={this.handleInputChange} />
 							</Control>
 						</Field>
 						
 						<Field>
 						<Label htmlFor="email">Email *</Label>
 							<Control>
-								<Input name="email" value={this.state.email} maxLength="80" onChange={this.handleInputChange} />
+								<Input label="email" name="email" value={this.state.email} maxLength="80" onChange={this.handleInputChange} />
 							</Control>
 						</Field>
 
 						<Field>
 						<Label htmlFor="author">Website</Label>
 							<Control>
-								<Input name="url" value={this.state.url} maxLength="80" onChange={this.handleInputChange}/>
+								<Input label="url" name="url" value={this.state.url} maxLength="80" onChange={this.handleInputChange}/>
 							</Control>
 						</Field>
 										

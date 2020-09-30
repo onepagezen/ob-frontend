@@ -39,7 +39,7 @@ const PostsQuery = gql`
           }
           featuredImage {
             node {
-              sourceUrl
+              sourceUrl(size: MEDIUM)
               altText
             }
           }

@@ -39,6 +39,7 @@ export default class MailingList extends React.Component {
                       <Field>
                         <Control>
                           <Input
+                            label="name"
                             type="text"
                             onChange={this._handleChange}
                             placeholder="Your name"
@@ -49,6 +50,7 @@ export default class MailingList extends React.Component {
                       <Field>
                         <Control>
                           <Input
+                            label="email"
                             type="email"
                             onChange={this._handleChange}
                             placeholder="Your email"

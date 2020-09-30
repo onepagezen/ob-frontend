@@ -805,7 +805,7 @@ div.comment-list a {
 }
 // Social icon styling
 .icon-row {
-  margin: 10px;
+  margin: 12px;
 }
 .icon-container {
   color: white;
@@ -843,6 +843,10 @@ div.comment-list a {
   margin-right: 20px;
   display: inline-block;
   white-space: nowrap;
+}
+// Header margin for post cards
+.post-card-header {
+  margin-bottom: 10px;
 }
 // Reverses stacking order of footer columns
 @media(max-width: $desktop) {
