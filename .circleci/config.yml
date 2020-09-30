@@ -45,7 +45,7 @@ jobs:
           command: npm install netlify-cli
       - run:
           name: Netlify Deploy
-          command: ./node_modules/.bin/netlify deploy --dir=public --yes
+          command: ./node_modules/.bin/netlify deploy --dir=public
   release:
     executor: node-executor
     working_directory: ~/ob-frontend
@@ -56,4 +56,4 @@ jobs:
           command: npm install netlify-cli
       - run:
           name: Netlify Deploy
-          command: ./node_modules/.bin/netlify deploy --prod --dir=public --yes
+          command: ./node_modules/.bin/netlify deploy --prod --dir=public
