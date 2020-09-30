@@ -4,17 +4,22 @@
 
 <h4 align="left">
     <strong>ob-frontend</strong> is a <a href="https://www.gatsbyjs.com/docs/glossary/headless-wordpress/">headless</a> WordPress starter theme built with <a href="https://www.gatsbyjs.com/docs/">Gatsby</a>.
-</h4>
+</h4>  
+  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bca3f947-6447-44a1-b77b-a8dadbf4c843/deploy-status)](https://app.netlify.com/sites/ob-frontend/deploys)
 
+
+  
 ## Table of contents
 + [Overview](#overview)
 + [Demo](#demo)
 + [Screenshots](#screenshots)
 + [Features](#features)
 + [Core Dependencies](#core-dependencies)
++ [Directory Structure](#directory-structure)
++ [Performance Tests](#performance-tests)
 + [Quick Start](#quick-start)
-+ [Deploy with Netlify](#deploy-with-netlify)
-+ [Folder Structure](#folder-structure)
++ [Deploy with Netlify](#deploy-to-netlify)
 + [Credits](#credits)
 + [Contributors](#contributors)
 + [License](#license)
@@ -56,7 +61,7 @@ View a live demo of this application [here](https://ob-frontend.netlify.app/).
 + Functionality for adding replies to nested (child) comments.
 + Mobile-first responsive design.
 + Pagination support.
-+ [React-icons](https://react-icons.github.io/).
++ [React-icons](https://react-icons.github.io/).  
 
 ## Core Dependencies
 + [WordPress](https://en.wikipedia.org/wiki/WordPress) backend (tested with 5.5)
@@ -64,11 +69,29 @@ View a live demo of this application [here](https://ob-frontend.netlify.app/).
 + [Node.js](https://nodejs.org/en/about/) (tested with 14.02).
 + [Gatsby CLI](https://www.gatsbyjs.com/docs/gatsby-cli/) (tested with 2.12.21)
 + [GraphQL](https://graphql.org/) (tested with 15.0)
-+ [Apollo Client](https://www.apollographql.com/docs/react/) (tested with 2.6.10) 
++ [Apollo Client](https://www.apollographql.com/docs/react/) (tested with 2.6.10)  
+
+
+## Directory Structure
+```sh
+📂 src
+├──📂 apollo # Apollo Client integration
+├──📂 comments # comment functionality for posts
+├──📂 components # layout and SEO components
+├──📂 images # local site images
+├──📂 mailchimp # mailing list integration
+├──📂 pages # all site pages
+├──📂 search # search and retrieve posts by query
+├──📂 styles # SCSS for styling
+└──📂 templates # dynamically generate posts and pages
+```  
+
+## Performance Tests
+
 
 ## Quick Start
 #### 1.  Deploy a WordPress backend
-This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice. In the above demo, the WordPress backend is deployed on a GCP Compute Engine f1-micro VM Instance.  
+This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice.  Make sure to populate your WordPress backend with at least one post, page, comment, and featured image before deploying ob-frontend before moving on to step 2.  
 
 #### 2.  Configure a domain name
 Configure a domain name for your WordPress backend (with HTTPS).  In this example, the WordPress backend is served from a subdomain (cms.example.com), and the WordPress frontend (ie. ob-frontend) is served from the root domain (example.com).  Serving the WordPress backend from a subdomain is optional, however, you will need to change the **SOURCE_URL** environment variable to match the URL of your WordPress backend.
@@ -115,7 +138,10 @@ GATSBY_CLIENT_URL=https://cms.example.com/graphql
 MAILCHIMP_ENDPOINT=https://example.us17.list-manage.com/subscribe/post?u=0893ac8473c98fa98eeef3fd5&amp;id=f4cbbd81d6
 ```
 
-## Deploy with Netlify
+#### 7.  Deploy the application
+We recommend deploying ob-frontend to [Netlify](https://www.netlify.com), as it integrates well with Gatsby.  To deploy to Netlify, follow the instructions in the [Deploy to Netlify](#deploy-to-netlify) section of this README.
+
+## Deploy to Netlify
 #### 1.  Deploy the site
 Use the **Deploy with Netlify** button to quickly deploy a website based on this starter.  
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/onepagezen/ob-frontend" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>  
@@ -125,20 +151,6 @@ When deploying with Netlify, make sure to add the production environment variabl
 
 <img alt="netlify-environment-variables" title="netlify-environment-variables" src="https://storage.googleapis.com/ob-frontend/netlify-env-vars.png" width="400">
 
-## Directory Structure
-
-```sh
-📂 src
-├──📂 apollo # Apollo Client integration
-├──📂 comments # comment functionality for posts
-├──📂 components # layout and SEO components
-├──📂 images # local site images
-├──📂 mailchimp # mailing list integration
-├──📂 pages # all site pages
-├──📂 search # search and retrieve posts by query
-├──📂 styles # SCSS for styling
-└──📂 templates # dynamically generate posts and pages
-```
 
 ## Credits
 + [Gatsby Starter Bloomer](https://github.com/zlutfi/gatsby-starter-bloomer) by [Zlutfi](https://github.com/zlutfi)
