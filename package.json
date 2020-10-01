@@ -58,8 +58,5 @@
   },
   "bugs": {
     "url": "https://github.com/onepagezen/ob-frontend/issues"
-  },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/" 
   }
 }
