@@ -29,7 +29,7 @@ $navbar-item-active-background-color: #592d86;
 $navbar-item-active-color: #fff;
 
 // Icon colors
-$youtube: #ff0000;
+$youtube: #f00;
 $facebook: #3b5998;
 $pinterest: #b31217;
 $instagram: #f10176;
@@ -43,12 +43,14 @@ $footer-color: true;
 .footer-logo {
   display: inline-block;
 }
+
 .footer-logo img {
   margin-bottom: -4px !important;
   margin-left: 3px;
   width: 5.3rem;
   max-width: 120px;
 }
+
 
 // Import only what you need from Bulma. By default this starter contains all of the styles.
 @import "~bulma/sass/utilities/_all.sass";
@@ -63,59 +65,68 @@ $footer-color: true;
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
 /* ------------------------
-* Custom styles go here
----------------------------*/
+  Custom styles go here
+--------------------------- */
 
-body {
-  font-size: 1.15em;
-}
 // Stick the footer to the bottom of the page
 .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 .site-content {
   flex-grow: 1;
   overflow: hidden;
 }
+
 .site-content-posts {
   margin: 0 auto;
   max-width: 720px;
   padding: 0 1.0875rem 1.45rem;
 }
+
 // Modify list styles
 #list-unstyled {
   list-style: none;
 }
+
 // Margins for buttons
 #btn-spaced {
   margin: 1rem 0;
 }
+
 // Margins for features icons
 #feature-icon {
   margin-right: 1.5rem;
 }
+
 // Margins for Posts page icons
 .post-icons {
   margin: 10px;
 }
+
 // Colors for social icons
 .youtube {
   color: $youtube;
 }
+
 .facebook {
   color: $facebook;
 }
+
 .pinterest {
   color: $pinterest;
 }
+
 .instagram {
   color: $instagram;
 }
+
 .twitter {
   color: $twitter;
 }
+
 .text-wrap {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -128,6 +139,7 @@ body {
   hyphens: auto;
 }
 
+
 // 
 
 html {
@@ -135,11 +147,14 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.15em;
+  margin: 0;
 }
+
 article,
 aside,
 details,
@@ -154,55 +169,70 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
 }
+
 audio:not([controls]) {
   display: none;
   height: 0;
 }
+
 progress {
   vertical-align: baseline;
 }
+
+
 [hidden],
 template {
   display: none;
 }
+
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
+
 a:active,
 a:hover {
   outline-width: 0;
 }
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
+
 b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
 }
+
 dfn {
   font-style: italic;
 }
+
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
 mark {
   background-color: #ff0;
   color: #000;
 }
+
 small {
   font-size: 80%;
 }
+
 sub,
 sup {
   font-size: 75%;
@@ -210,18 +240,23 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
+
 sub {
   bottom: -0.25em;
 }
+
 sup {
   top: -0.5em;
 }
+
 img {
   border-style: none;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
+
 code,
 kbd,
 pre,
@@ -229,14 +264,17 @@ samp {
   // font-family: monospace, monospace;
   font-size: 1em;
 }
+
 figure {
   margin: 1em 40px;
 }
+
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
+
 button,
 input,
 optgroup,
@@ -245,23 +283,28 @@ textarea {
   font: inherit;
   margin: 0;
 }
+
 optgroup {
   font-weight: 700;
 }
+
 button,
 input {
   overflow: visible;
 }
+
 button,
 select {
   text-transform: none;
 }
+
 [type="reset"],
 [type="submit"],
 button,
 html [type="button"] {
   -webkit-appearance: button;
 }
+
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner,
@@ -269,17 +312,20 @@ button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
+
 legend {
   box-sizing: border-box;
   color: inherit;
@@ -288,48 +334,60 @@ legend {
   padding: 0;
   white-space: normal;
 }
+
 textarea {
   overflow: auto;
 }
+
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
+
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
+
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
+
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
+
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 * {
   box-sizing: inherit;
 }
+
 *:before {
   box-sizing: inherit;
 }
+
 *:after {
   box-sizing: inherit;
 }
+
 body {
   color: hsla(0, 0%, 0%, 0.8);
   // font-family: georgia, serif;
@@ -341,6 +399,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
 img {
   max-width: 100%;
   margin-left: 0;
@@ -352,6 +411,7 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -369,6 +429,7 @@ h1 {
   font-size: 2.25rem;
   line-height: 1.1;
 }
+
 h2 {
   margin-left: 0;
   margin-right: 0;
@@ -386,6 +447,7 @@ h2 {
   font-size: 1.62671rem;
   line-height: 1.1;
 }
+
 h3 {
   margin-left: 0;
   margin-right: 0;
@@ -403,6 +465,7 @@ h3 {
   font-size: 1.38316rem;
   line-height: 1.1;
 }
+
 h4 {
   margin-left: 0;
   margin-right: 0;
@@ -420,6 +483,7 @@ h4 {
   font-size: 1rem;
   line-height: 1.1;
 }
+
 h5 {
   margin-left: 0;
   margin-right: 0;
@@ -437,6 +501,7 @@ h5 {
   font-size: 0.85028rem;
   line-height: 1.1;
 }
+
 h6 {
   margin-left: 0;
   margin-right: 0;
@@ -454,6 +519,7 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
+
 hgroup {
   margin-left: 0;
   margin-right: 0;
@@ -464,6 +530,7 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 ul {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -476,6 +543,7 @@ ul {
   list-style-position: outside;
   list-style-image: none;
 }
+
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -488,6 +556,7 @@ ol {
   list-style-position: outside;
   list-style-image: none;
 }
+
 dl {
   margin-left: 0;
   margin-right: 0;
@@ -498,6 +567,7 @@ dl {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 dd {
   margin-left: 0;
   margin-right: 0;
@@ -508,6 +578,7 @@ dd {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 p {
   margin-left: 0;
   margin-right: 0;
@@ -518,6 +589,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -528,6 +600,7 @@ figure {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 pre {
   margin-left: 0;
   margin-right: 0;
@@ -541,6 +614,7 @@ pre {
   word-wrap: normal;
   padding: 1.45rem;
 }
+
 table {
   margin-left: 0;
   margin-right: 0;
@@ -555,6 +629,7 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
 fieldset {
   margin-left: 0;
   margin-right: 0;
@@ -565,6 +640,7 @@ fieldset {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 blockquote {
   margin-left: 1.45rem;
   margin-right: 1.45rem;
@@ -575,6 +651,7 @@ blockquote {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 form {
   margin-left: 0;
   margin-right: 0;
@@ -585,6 +662,7 @@ form {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 noscript {
   margin-left: 0;
   margin-right: 0;
@@ -595,6 +673,7 @@ noscript {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 iframe {
   margin-left: 0;
   margin-right: 0;
@@ -605,6 +684,7 @@ iframe {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 hr {
   margin-left: 0;
   margin-right: 0;
@@ -618,6 +698,7 @@ hr {
   border: none;
   height: 1px;
 }
+
 address {
   margin-left: 0;
   margin-right: 0;
@@ -628,77 +709,98 @@ address {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 b {
   font-weight: bold;
 }
+
 strong {
   font-weight: bold;
 }
+
 dt {
   font-weight: bold;
 }
+
 th {
   font-weight: bold;
 }
+
 li {
   margin-bottom: calc(1.45rem / 2);
 }
+
 ol li {
   padding-left: 0;
 }
+
 ul li {
   padding-left: 0;
 }
+
 li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
+
 li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
+
 blockquote *:last-child {
   margin-bottom: 0;
 }
+
 li *:last-child {
   margin-bottom: 0;
 }
+
 p *:last-child {
   margin-bottom: 0;
 }
+
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
+
 code {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
+
 kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
+
 samp {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
+
 abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
 }
+
 acronym {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
 }
+
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
   text-decoration: none;
 }
+
 thead {
   text-align: left;
 }
+
 td,
 th {
   text-align: left;
@@ -712,14 +814,17 @@ th {
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
 }
+
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
+
 th:last-child,
 td:last-child {
   padding-right: 0;
 }
+
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
@@ -730,10 +835,12 @@ code {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
+
 pre code {
   background: none;
   line-height: 1.42;
 }
+
 code:before,
 code:after,
 tt:before,
@@ -741,32 +848,38 @@ tt:after {
   letter-spacing: -0.2em;
   content: " ";
 }
+
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
 }
+
 // Comments formatting
 .comment-list {
   margin: 0px 0px 40px 0px;
   padding: 0px 40px 20px 40px;
   background-color: #f5f5f5;
 }
+
 .comment-author {
   margin-bottom: 1.45rem;
 }
+
 .comment-container {
   background-color: #fff;
   padding: 32px;
   margin-top: 24px;
 }
+
 .parent-comment {
   border-right: none;
   padding: 40px 40px 20px 40px;
   margin: 0px -40px 0px -40px;
   border-top: 20px solid #fff;
 }
+
 .child-comment {
   border: 2px solid #ffffff;
   border-top: 0px;
@@ -774,64 +887,80 @@ pre tt:after {
   padding: 40px 80px 20px 40px;
   margin-right: -40px;
 }
+
 .comment-list-header {
   margin-bottom: 0px;
 }
+
 .comment-reply-link {
   color: $primary;
   font-weight: 500;
   margin: 10px 0;
   display: inline-block;
 }
+
 .comment-body-container {
   margin-bottom: 40px;
 }
+
 div.comment-list a {
   text-decoration: underline;
 }
+
 .comment-form {
   margin-top: 24px;
 }
+
 // Homepage component styling
 .mailing-list {
   background-color: $primary;
   color: $white;
 }
+
 .content-centered {
   text-align: center;
 }
+
 .homepage-posts {
   background-color: #ededed;
 }
+
 // Social icon styling
 .icon-row {
   margin: 12px;
 }
+
 .icon-container {
   color: white;
   margin-bottom: 27px;
 }
+
 .nutty-buddies-intro {
   margin-top: 45px;
 }
+
 .navbar-item img {
   margin: 10px 0;
   max-height: none;
 }
+
 //Styling for primary footer logo
 .footer-logo {
   width: 100%;
   max-width: 425px;
 }
+
 // Removes excess bottom margin on footer
 .footer {
   padding-bottom: 1rem;
 }
+
 // Styling for post metadata icons
 .meta-icon {
   font-size: 12px;
   margin-right: 5px;
 }
+
 // Styling for metadata text
 .meta-text {
   margin-bottom: 1em; 
@@ -839,15 +968,18 @@ div.comment-list a {
   font-size: .8em;
   color: grey;
 }
+
 .meta-section {
   margin-right: 20px;
   display: inline-block;
   white-space: nowrap;
 }
+
 // Header margin for post cards
 .post-card-header {
   margin-bottom: 10px;
 }
+
 // Reverses stacking order of footer columns
 @media(max-width: $desktop) {
   .columns.is-reversed-touch {
@@ -855,6 +987,7 @@ div.comment-list a {
     display: flex;
   }
 }
+
 @media(max-width: $tablet) {
   .columns.is-reversed-mobile {
     flex-direction: column-reverse;
