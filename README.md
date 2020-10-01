@@ -15,7 +15,6 @@
 +   [Features](#features)  
 +   [Core Dependencies](#core-dependencies)  
 +   [Directory Structure](#directory-structure)  
-+   [Performance Tests](#performance-tests)  
 +   [Quick Start](#quick-start)  
 +   [Deploy with Netlify](#deploy-to-netlify)  
 +   [Credits](#credits)  
@@ -73,14 +72,13 @@ View a live demo of this application **[here](https://ob-frontend.netlify.app/)*
 ├──📂 styles # SCSS for styling  
 └──📂 templates # dynamically generate posts and pages  
 ```  
-## Performance Tests  
 ## Quick Start  
 ### 1.  Deploy a WordPress backend  
-This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice.  Before moving to step 2, **you must** complete the following things:  
+This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice.  Before moving to step 2, you must complete the following:  
 +   Your WordPress backend must be populated with one of each of the following: a post, a page, a comment, and a featured image.  
-+   A [tag](https://wordpress.com/support/posts/tags/#adding-tags-via-the-tags-module) of ***featured*** must be added to any posts you want to appear on the **Featured Posts** section of the homepage.  
++   A [tag](https://wordpress.com/support/posts/tags/#adding-tags-via-the-tags-module) of *featured* must be added to any posts you want to appear on the **Featured Posts** section of the homepage.  
 ### 2.  Configure a domain name  
-Configure a domain name for your WordPress backend (with HTTPS).  In this example, the WordPress backend is served from a subdomain (cms.example.com), and the WordPress frontend (ie. ob-frontend) is served from the root domain (example.com).  Serving the WordPress backend from a subdomain is optional, however, you will need to change the **SOURCE_URL** environment variable to match the URL of your WordPress backend.  
+Configure a domain name for your WordPress backend (with HTTPS).  In this example, the WordPress backend is served from a subdomain (cms.example.com), and the WordPress frontend (ie. ob-frontend) is served from the root domain (example.com).  Serving the WordPress backend from a subdomain is optional, however, you will need to change the **SOURCE_URL** environment variable to match the URL of your WordPress backend (see steps 5 and 6). 
 ### 3.  Create a Gatsby site  
 Use the Gatsby CLI to create a new site, specifying the ob-frontend starter.  
 ```sh  
