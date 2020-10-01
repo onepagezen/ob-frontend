@@ -75,19 +75,19 @@ View a live demo of this application **[here](https://ob-frontend.netlify.app/)*
 ```  
 ## Performance Tests  
 ## Quick Start  
-#### 1.  Deploy a WordPress backend  
+### 1.  Deploy a WordPress backend  
 This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice.  Before moving to step 2, **you must** complete the following things:  
 * Your WordPress backend must be populated with one of each of the following: a post, a page, a comment, and a featured image.  
 * A [tag](https://wordpress.com/support/posts/tags/#adding-tags-via-the-tags-module) of ***featured*** must be added to any posts you want to appear on the **Featured Posts** section of the homepage.  
-#### 2.  Configure a domain name  
+### 2.  Configure a domain name  
 Configure a domain name for your WordPress backend (with HTTPS).  In this example, the WordPress backend is served from a subdomain (cms.example.com), and the WordPress frontend (ie. ob-frontend) is served from the root domain (example.com).  Serving the WordPress backend from a subdomain is optional, however, you will need to change the **SOURCE_URL** environment variable to match the URL of your WordPress backend.  
-#### 3.  Create a Gatsby site  
+### 3.  Create a Gatsby site  
 Use the Gatsby CLI to create a new site, specifying the ob-frontend starter.  
 ```sh  
 # Create a new Gatsby site using the ob-frontend starter  
 gatsby new blog https://github.com/onepagezen/ob-frontend  
 ```  
-#### 4.  Create environment variable files  
+### 4.  Create environment variable files  
 This theme relies heavily on enivronment variables in order to get up and running quickly.  After creating the site using the Gatsby CLI (step 3), run the following commands to configure the environment variables for your site:  
 ```sh  
 # Navigate into your new site's directory  
@@ -96,7 +96,7 @@ cd ob-frontend
 # Create .env files for both the development and production environments  
 touch .env.development .env.production  
 ```  
-#### 5.  Add development environment variables   
+### 5.  Add development environment variables   
 Add the following environment variables to your **.env.development** file, making sure to replace **example.com** with your own domain name, and **MAILCHIMP_ENDPOINT** with the [form action URL](https://secomapp.zendesk.com/hc/en-us/articles/360031503791-How-to-find-the-MailChimp-Form-Action-URL-) of your MailChimp mailing list:  
 ```sh
 SITE_URL=https://localhost:8000
@@ -107,7 +107,7 @@ REPLACEMENT_URL=localhost:8000
 GATSBY_CLIENT_URL=https://cms.example.com/graphql
 MAILCHIMP_ENDPOINT=https://example.us17.list-manage.com/subscribe/post?u=0893ac8473c98fa98eeef3fd5&amp;id=f4cbbd81d6
 ```
-#### 6.  Add production environment variables  
+### 6.  Add production environment variables  
 Add the following environment variables to your **.env.production** file, making sure to replace **example.com** with your own domain name, and **MAILCHIMP_ENDPOINT** with the endpoint of your Mailchimp mailing list:
 ```sh
 SITE_URL=https://example.com
@@ -118,13 +118,14 @@ REPLACEMENT_URL=example.com
 GATSBY_CLIENT_URL=https://cms.example.com/graphql
 MAILCHIMP_ENDPOINT=https://example.us17.list-manage.com/subscribe/post?u=0893ac8473c98fa98eeef3fd5&amp;id=f4cbbd81d6
 ```
-#### 7.  Deploy the application  
+### 7.  Deploy the application  
 We recommend deploying ob-frontend to [Netlify](https://www.netlify.com), as it integrates well with Gatsby.  To deploy to Netlify, follow the instructions in the [Deploy to Netlify](#deploy-to-netlify) section of this README.  
 ## Deploy to Netlify  
-#### 1.  Deploy the site  
+### 1.  Deploy the site  
 Use the **Deploy with Netlify** button to quickly deploy a website based on this starter:  
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/onepagezen/ob-frontend" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>  
-#### 2.  Configure environment variables
+
+### 2.  Configure environment variables
 When deploying with Netlify, make sure to add the production environment variables to your Netlify build environment.  One option is to add them in your site dashboard under **Settings > Build & deploy > Environment > Environment variables**.  
 <img alt="netlify-environment-variables" title="netlify-environment-variables" src="https://storage.googleapis.com/ob-frontend/netlify-env-vars.png" width="400">  
 
@@ -137,9 +138,9 @@ When deploying with Netlify, make sure to add the production environment variabl
 +   [Build an App Using React and the GraphQL Plugin for WordPress in ~15mins](https://www.wpgraphql.com/2019/01/10/build-an-app-using-react-and-the-graphql-plugin-for-wordpress-in-15mins/) by [Kellen Mace](https://github.com/kellenmace)  
 +   [How To Build A Blog with WordPress and Gatsby.js](https://www.gatsbyjs.com/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/) by [Tim Smith](https://github.com/iamtimsmith)  
 ## Contributors  
-[<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80) |[<img alt="alehel" src="https://avatars2.githubusercontent.com/u/32469926?v=4&s=117" width="117">](https://github.com/leronamin) |
-:---: |:---: |
-[petejos80](https://github.com/petejos80) |[leronamin](https://github.com/leronamin) |
+[<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80) | [<img alt="alehel" src="https://avatars2.githubusercontent.com/u/32469926?v=4&s=117" width="117">](https://github.com/leronamin) |
+:---: | :---: |
+[petejos80](https://github.com/petejos80) | [leronamin](https://github.com/leronamin) |
 ## License  
 The MIT License (MIT)
 

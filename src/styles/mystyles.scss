@@ -38,19 +38,6 @@ $twitter: #55acee;
 // Footer styles
 $footer-background-color: #f7f8fa;
 $footer-color: true;
-// Aligns opzsys logo with inline text
-// Cusomize to align of your own footer logos
-.footer-logo {
-  display: inline-block;
-}
-
-.footer-logo img {
-  margin-bottom: -4px !important;
-  margin-left: 3px;
-  width: 5.3rem;
-  max-width: 120px;
-}
-
 
 // Import only what you need from Bulma. By default this starter contains all of the styles.
 @import "~bulma/sass/utilities/_all.sass";
@@ -139,11 +126,10 @@ $footer-color: true;
   hyphens: auto;
 }
 
-
-// 
-
 html {
-  // font-family: sans-serif;
+  font: 112.5%/1.45em georgia, serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -218,12 +204,6 @@ dfn {
   font-style: italic;
 }
 
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 mark {
   background-color: #ff0;
   color: #000;
@@ -247,10 +227,6 @@ sub {
 
 sup {
   top: -0.5em;
-}
-
-img {
-  border-style: none;
 }
 
 svg:not(:root) {
@@ -370,21 +346,15 @@ textarea {
   font: inherit;
 }
 
-html {
-  font: 112.5%/1.45em georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-
 * {
   box-sizing: inherit;
 }
 
-*:before {
+*::before {
   box-sizing: inherit;
 }
 
-*:after {
+*::after {
   box-sizing: inherit;
 }
 
@@ -410,6 +380,7 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  border-style: none;
 }
 
 h1 {
@@ -441,7 +412,7 @@ h2 {
   margin-bottom: 1.45rem;
   color: inherit;
   // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -459,7 +430,7 @@ h3 {
   margin-bottom: 1.45rem;
   color: inherit;
   // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -477,7 +448,7 @@ h4 {
   margin-bottom: 1.45rem;
   color: inherit;
   // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -513,7 +484,7 @@ h6 {
   margin-bottom: 1.45rem;
   color: inherit;
   // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -841,25 +812,25 @@ pre code {
   line-height: 1.42;
 }
 
-code:before,
-code:after,
-tt:before,
-tt:after {
+code::before,
+code::after,
+tt::before,
+tt::after {
   letter-spacing: -0.2em;
   content: " ";
 }
 
-pre code:before,
-pre code:after,
-pre tt:before,
-pre tt:after {
+pre code::before,
+pre code::after,
+pre tt::before,
+pre tt::after {
   content: "";
 }
 
 // Comments formatting
 .comment-list {
-  margin: 0px 0px 40px 0px;
-  padding: 0px 40px 20px 40px;
+  margin: 0 0 40px 0;
+  padding: 0 40px 20px 40px;
   background-color: #f5f5f5;
 }
 
@@ -876,20 +847,20 @@ pre tt:after {
 .parent-comment {
   border-right: none;
   padding: 40px 40px 20px 40px;
-  margin: 0px -40px 0px -40px;
+  margin: 0 -40px 0 -40px;
   border-top: 20px solid #fff;
 }
 
 .child-comment {
-  border: 2px solid #ffffff;
-  border-top: 0px;
+  border: 2px solid #fff;
+  border-top: 0;
   border-right: none;
   padding: 40px 80px 20px 40px;
   margin-right: -40px;
 }
 
 .comment-list-header {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .comment-reply-link {
@@ -948,6 +919,15 @@ div.comment-list a {
 .footer-logo {
   width: 100%;
   max-width: 425px;
+  display: inline-block;
+}
+
+// Customize to align of your own footer logos
+.footer-logo img {
+  margin-bottom: -4px !important;
+  margin-left: 3px;
+  width: 5.3rem;
+  max-width: 120px;
 }
 
 // Removes excess bottom margin on footer
@@ -963,7 +943,7 @@ div.comment-list a {
 
 // Styling for metadata text
 .meta-text {
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   text-transform: uppercase;
   font-size: .8em;
   color: grey;
@@ -981,14 +961,14 @@ div.comment-list a {
 }
 
 // Reverses stacking order of footer columns
-@media(max-width: $desktop) {
+@media (max-width: $desktop) {
   .columns.is-reversed-touch {
     flex-direction: column-reverse;
     display: flex;
   }
 }
 
-@media(max-width: $tablet) {
+@media (max-width: $tablet) {
   .columns.is-reversed-mobile {
     flex-direction: column-reverse;
     display: flex;
