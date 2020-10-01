@@ -9,18 +9,18 @@
 </h4>
 
 ## Table of contents  
-+ [Overview](#overview)  
-+ [Demo](#demo)  
-+ [Screenshots](#screenshots)  
-+ [Features](#features)  
-+ [Core Dependencies](#core-dependencies)  
-+ [Directory Structure](#directory-structure)  
-+ [Performance Tests](#performance-tests)  
-+ [Quick Start](#quick-start)  
-+ [Deploy with Netlify](#deploy-to-netlify)  
-+ [Credits](#credits)  
-+ [Contributors](#contributors)  
-+ [License](#license)  
++   [Overview](#overview)  
++   [Demo](#demo)  
++   [Screenshots](#screenshots)  
++   [Features](#features)  
++   [Core Dependencies](#core-dependencies)  
++   [Directory Structure](#directory-structure)  
++   [Performance Tests](#performance-tests)  
++   [Quick Start](#quick-start)  
++   [Deploy with Netlify](#deploy-to-netlify)  
++   [Credits](#credits)  
++   [Contributors](#contributors)  
++   [License](#license)  
 ## Overview  
 **ob-frontend** is a modern implementation of the WordPress frontend as a [single-page application (SPA)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/choose-between-traditional-web-and-single-page-apps#when-to-choose-spas).  This template, developed and packaged as a [Gatsby starter](https://www.gatsbyjs.com/docs/starters/), is a [solution](https://searchitchannel.techtarget.com/definition/solution) for developers looking for the ease-of-use and flexibility that comes with using WordPress as a [CMS](https://www.hostinger.com/tutorials/what-is-wordpress), paired with the familiar development experience and modern UI features of a [React](https://reactjs.org/)/[GraphQL](https://graphql.org/) implementation.  The **ob-frontend** Gatsby Starter attempts to closely mirror many of the core features and functionality of the familiar WordPress UI, such as nested comments, post sidebar layout, and a mailing list widget.  
 ## Demo
@@ -40,26 +40,26 @@ View a live demo of this application **[here](https://ob-frontend.netlify.app/)*
 </h1>
 
 ## Features  
-+ Post, page, and comment list functionality supported by [Apollo client](https://www.apollographql.com/docs/react/).  
-+ Modern UI powered by [Bloomer](https://bloomer.js.org) React components for Bulma.  
-+ Feature-rich design capabilities supported by [Sass](https://sass-lang.com).  
-+ Dynamic support for changing theme colors.  
-+ Support for featured posts on homepage.  
-+ Mailing list integration with [Mailchimp](https://mailchimp.com).  
-+ Functionality for searching posts.  
-+ Support for threaded (nested) comments 2 levels deep.  
-+ Functionality for posting top-level (parent) comments.  
-+ Functionality for adding replies to nested (child) comments.  
-+ Mobile-first responsive design.  
-+ Pagination support.  
-+ [React-icons](https://react-icons.github.io/).  
++   Post, page, and comment list functionality supported by [Apollo client](https://www.apollographql.com/docs/react/).  
++   Modern UI powered by [Bloomer](https://bloomer.js.org) React components for Bulma.  
++   Feature-rich design capabilities supported by [Sass](https://sass-lang.com).  
++   Dynamic support for changing theme colors.  
++   Support for featured posts on homepage.  
++   Mailing list integration with [Mailchimp](https://mailchimp.com).  
++   Functionality for searching posts.  
++   Support for threaded (nested) comments 2 levels deep.  
++   Functionality for posting top-level (parent) comments.  
++   Functionality for adding replies to nested (child) comments.  
++   Mobile-first responsive design.  
++   Pagination support.  
++   [React-icons](https://react-icons.github.io/).  
 ## Core Dependencies  
-+ [WordPress](https://en.wikipedia.org/wiki/WordPress) backend (tested with 5.5)  
-+ [WPGraphQL](https://www.wpgraphql.com/) (tested with 0.11).  
-+ [Node.js](https://nodejs.org/en/about/) (tested with 14.02).  
-+ [Gatsby CLI](https://www.gatsbyjs.com/docs/gatsby-cli/) (tested with 2.12.21)  
-+ [GraphQL](https://graphql.org/) (tested with 15.0)  
-+ [Apollo Client](https://www.apollographql.com/docs/react/) (tested with 2.6.10)  
++   [WordPress](https://en.wikipedia.org/wiki/WordPress) backend (tested with 5.5)  
++   [WPGraphQL](https://www.wpgraphql.com/) (tested with 0.11).  
++   [Node.js](https://nodejs.org/en/about/) (tested with 14.02).  
++   [Gatsby CLI](https://www.gatsbyjs.com/docs/gatsby-cli/) (tested with 2.12.21)  
++   [GraphQL](https://graphql.org/) (tested with 15.0)  
++   [Apollo Client](https://www.apollographql.com/docs/react/) (tested with 2.6.10)  
 ## Directory Structure
 ```sh
 📂 src  
@@ -129,13 +129,13 @@ When deploying with Netlify, make sure to add the production environment variabl
 <img alt="netlify-environment-variables" title="netlify-environment-variables" src="https://storage.googleapis.com/ob-frontend/netlify-env-vars.png" width="400">  
 
 ## Credits  
-+ [Gatsby Starter Bloomer](https://github.com/zlutfi/gatsby-starter-bloomer) by [Zlutfi](https://github.com/zlutfi)  
-+ [Forward and Backward Pagination with WPGraphQL](https://www.wpgraphql.com/2020/03/26/forward-and-backward-pagination-with-wpgraphql/) by [Jason Bahl](https://github.com/jasonbahl)   
-+ [Dynamic Comments with Gatsby and WordPress](https://northstack.com/dynamic-comments-gatsby-wordpress/) by [Jeff Matson](https://github.com/JeffMatson)   
-+ [Overview - Guide to Gatsby WordPress Starter Advanced with Previews, i18n and more](https://dev.to/nevernull/basic-wordpress-gatsby-setup-guide-to-gatsby-wordpress-starter-advanced-with-previews-i18n-and-more-44d8) by [Henrick Wirth](https://github.com/henrikwirth)  
-+ [Creating a Gatsby Front-End with a WordPress CMS](https://raquelmsmith.com/blog/creating-a-gatsby-front-end-with-a-wordpress-cms/) by [Raquel Smith](https://github.com/raquelmsmith)  
-+ [Build an App Using React and the GraphQL Plugin for WordPress in ~15mins](https://www.wpgraphql.com/2019/01/10/build-an-app-using-react-and-the-graphql-plugin-for-wordpress-in-15mins/) by [Kellen Mace](https://github.com/kellenmace)  
-+ [How To Build A Blog with WordPress and Gatsby.js](https://www.gatsbyjs.com/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/) by [Tim Smith](https://github.com/iamtimsmith)  
++   [Gatsby Starter Bloomer](https://github.com/zlutfi/gatsby-starter-bloomer) by [Zlutfi](https://github.com/zlutfi)  
++   [Forward and Backward Pagination with WPGraphQL](https://www.wpgraphql.com/2020/03/26/forward-and-backward-pagination-with-wpgraphql/) by [Jason Bahl](https://github.com/jasonbahl)   
++   [Dynamic Comments with Gatsby and WordPress](https://northstack.com/dynamic-comments-gatsby-wordpress/) by [Jeff Matson](https://github.com/JeffMatson)   
++   [Overview - Guide to Gatsby WordPress Starter Advanced with Previews, i18n and more](https://dev.to/nevernull/basic-wordpress-gatsby-setup-guide-to-gatsby-wordpress-starter-advanced-with-previews-i18n-and-more-44d8) by [Henrick Wirth](https://github.com/henrikwirth)  
++   [Creating a Gatsby Front-End with a WordPress CMS](https://raquelmsmith.com/blog/creating-a-gatsby-front-end-with-a-wordpress-cms/) by [Raquel Smith](https://github.com/raquelmsmith)  
++   [Build an App Using React and the GraphQL Plugin for WordPress in ~15mins](https://www.wpgraphql.com/2019/01/10/build-an-app-using-react-and-the-graphql-plugin-for-wordpress-in-15mins/) by [Kellen Mace](https://github.com/kellenmace)  
++   [How To Build A Blog with WordPress and Gatsby.js](https://www.gatsbyjs.com/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/) by [Tim Smith](https://github.com/iamtimsmith)  
 ## Contributors  
 [<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80) |[<img alt="alehel" src="https://avatars2.githubusercontent.com/u/32469926?v=4&s=117" width="117">](https://github.com/leronamin) |
 :---: |:---: |
