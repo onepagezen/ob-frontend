@@ -77,8 +77,8 @@ View a live demo of this application **[here](https://ob-frontend.netlify.app/)*
 ## Quick Start  
 ### 1.  Deploy a WordPress backend  
 This starter theme relies on a WordPress backend from which to fetch data related to WordPress posts, pages, comments, etc.  You can deploy the WordPress backend using the hosting provider of your choice.  Before moving to step 2, **you must** complete the following things:  
-* Your WordPress backend must be populated with one of each of the following: a post, a page, a comment, and a featured image.  
-* A [tag](https://wordpress.com/support/posts/tags/#adding-tags-via-the-tags-module) of ***featured*** must be added to any posts you want to appear on the **Featured Posts** section of the homepage.  
++   Your WordPress backend must be populated with one of each of the following: a post, a page, a comment, and a featured image.  
++   A [tag](https://wordpress.com/support/posts/tags/#adding-tags-via-the-tags-module) of ***featured*** must be added to any posts you want to appear on the **Featured Posts** section of the homepage.  
 ### 2.  Configure a domain name  
 Configure a domain name for your WordPress backend (with HTTPS).  In this example, the WordPress backend is served from a subdomain (cms.example.com), and the WordPress frontend (ie. ob-frontend) is served from the root domain (example.com).  Serving the WordPress backend from a subdomain is optional, however, you will need to change the **SOURCE_URL** environment variable to match the URL of your WordPress backend.  
 ### 3.  Create a Gatsby site  
@@ -138,9 +138,9 @@ When deploying with Netlify, make sure to add the production environment variabl
 +   [Build an App Using React and the GraphQL Plugin for WordPress in ~15mins](https://www.wpgraphql.com/2019/01/10/build-an-app-using-react-and-the-graphql-plugin-for-wordpress-in-15mins/) by [Kellen Mace](https://github.com/kellenmace)  
 +   [How To Build A Blog with WordPress and Gatsby.js](https://www.gatsbyjs.com/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/) by [Tim Smith](https://github.com/iamtimsmith)  
 ## Contributors  
-[<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80) | [<img alt="alehel" src="https://avatars2.githubusercontent.com/u/32469926?v=4&s=117" width="117">](https://github.com/leronamin) |
+[<img alt="vzhou842" src="https://avatars3.githubusercontent.com/u/34431435?v=4&s=117" width="117">](https://github.com/petejos80)|[<img alt="alehel" src="https://avatars2.githubusercontent.com/u/32469926?v=4&s=117" width="117">](https://github.com/leronamin)|
 :---: | :---: |
-[petejos80](https://github.com/petejos80) | [leronamin](https://github.com/leronamin) |
+| [petejos80](https://github.com/petejos80) | [leronamin](https://github.com/leronamin) |
 ## License  
 The MIT License (MIT)
 
