@@ -25,10 +25,10 @@ const About = () => {
               <h1>Make this theme your own!</h1>
               <p>Nutty Buddies is a squirrel-themed demo site for ob-frontend - a modern implementation of the WordPress frontend as a single-page application (SPA). This template, developed and packaged as a Gatsby starter, is a free and open-source solution for developers looking to modernize their WordPress sites.</p>
               {/* Icon buttons for Download and Documentation */}
-              <Button href="https://github.com/onepagezen/ob-frontend/archive/master.zip">
+              <Button className="github-link-buttons" href="https://github.com/onepagezen/ob-frontend/archive/master.zip">
                 <FcDownload/>&nbsp;&nbsp;Download
               </Button>&nbsp;&nbsp;
-              <Button href="https://github.com/onepagezen/ob-frontend">
+              <Button className="github-link-buttons" href="https://github.com/onepagezen/ob-frontend">
                 <FcDocument/>&nbsp;&nbsp;Documentation
               </Button>
             </div>

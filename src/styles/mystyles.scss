@@ -936,6 +936,22 @@ div.comment-list a {
   margin-bottom: 10px;
 }
 
+// Add margin under downloads and documentation buttons
+.github-link-buttons {
+  margin-bottom: 20px;
+}
+
+// Adds max dimensions for navbar site logo image
+.navbar-site-logo {
+  width: 230px;
+}
+
+// Adds margin to top of mobile hamburger menu icon
+  // to align with navbar site logo image
+.navbar-burger {
+  margin-top: 4.5px;
+}
+
 // Reverses stacking order of footer columns
 @media (max-width: $desktop) {
   .columns.is-reversed-touch {
