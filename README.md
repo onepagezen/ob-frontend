@@ -54,8 +54,8 @@ View a live demo of this application **[here](https://ob-frontend.netlify.app/)*
 +   [React-icons](https://react-icons.github.io/).  
 ## Core Dependencies  
 +   [WordPress](https://en.wikipedia.org/wiki/WordPress) backend (tested with 5.5)  
-+   [WPGraphQL](https://www.wpgraphql.com/) (tested with 0.11).  
-+   [Node.js](https://nodejs.org/en/about/) (tested with 14.02).  
++   [WPGraphQL](https://www.wpgraphql.com/) (requires 0.13.1 or earlier)
++   [Node.js](https://nodejs.org/en/about/) (tested with 14.02)
 +   [Gatsby CLI](https://www.gatsbyjs.com/docs/gatsby-cli/) (tested with 2.12.21)  
 +   [GraphQL](https://graphql.org/) (tested with 15.0)  
 +   [Apollo Client](https://www.apollographql.com/docs/react/) (tested with 2.6.10)  
