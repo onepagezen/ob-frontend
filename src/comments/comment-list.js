@@ -10,7 +10,7 @@ import CommentForm from '../comments/comment-form';
 // Create a GraphQL query for the comment list.
 const commentQuery = gql`
 query($postId: ID!) {
-    comments(where: { contentId: $postId, contentStatus: PUBLISH, orderby: COMMENT_DATE, order: ASC }) {
+    comments(first: 1000, where: { contentId: $postId, contentStatus: PUBLISH, orderby: COMMENT_DATE, order: ASC }) {
       nodes {
           ...CommentFields
       }
@@ -67,7 +67,7 @@ class CommentList extends React.Component {
   // This method will be sent to the child component
   handler() {
     this.setState({
-        showing: false
+      showing: false
   });
 }
 
@@ -117,7 +117,9 @@ class CommentList extends React.Component {
               return (	
                 // Display the comment list
                 <>
-                  <h3 className="comment-list-header"><strong>Comments</strong></h3>
+                  <h3 className="comment-list-header">
+                    {'Comments'}
+                  </h3>
                   <div className="comment-list">
                     <div>
                       
@@ -150,16 +152,15 @@ class CommentList extends React.Component {
                             </div>
                             )
                           )}
-
                           
-                          {// Handle button click
-                          ((d.parent === null && openId !== d.commentId) || (d.parent === null && this.state.showing === false)) ?
-                            <a className="comment-reply-link" onClick={() => this.setState({ showing: true, openId: d.commentId })}>
-                              {(showing && (openId === d.commentId) ? "Reply" : "Reply")}
-                            </a> 
-                          : null
+                          { // IMPORTANT FUNCTIONALITY - DO NOT REMOVE //
+                          /* Handle button click.  Un-commenting this block inserts a REPLY button at the bottom of each WordPress comment block.  Clicking the REPLY button will display the comment form inside of the comment block, and hide it from the bottom of the page.  The intended purpose of this feature is to allow users to reply to child comments.  Because all replies are submitted as a replies to the parent comment, they will display correctly since they fit the condition of only allowing nested comments two-levels deep.  However, if an admin were to reply to the comment through the /edit-comments.php page, it would not display.  This is because the admin's reply would be a reply to the child comment, and not to the parent comment, thereby making the comment 3-levels deep.  Because the current functionality only allows for comments that are two-levels deep, the admin's reply to the child comment would not display. */ 
+                          // ((d.parent === null && openId !== d.commentId) || (d.parent === null && this.state.showing === false)) ?
+                          //   <a className="comment-reply-link" onClick={() => this.setState({ showing: true, openId: d.commentId })}>
+                          //     {(showing && (openId === d.commentId) ? "Reply" : "Reply")}
+                          //   </a> 
+                          // : null
                           }
-
                           
                           {// Display comment form
                           (showing === true && d.parent === null && openId === d.commentId)
