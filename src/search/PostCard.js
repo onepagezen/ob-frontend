@@ -64,7 +64,7 @@ return (
 			</Container>
 			<Columns>
 				<Column isSize='1/4'>
-					{ featuredImage && // If a featured image exists, display it.
+					{ featuredImage && // If a featured image exists, display it (Prevents application from crashing).
             <img 
               src={featuredImage.node.sourceUrl} 
               alt={featuredImage.node.altText} 
