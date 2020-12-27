@@ -10,7 +10,7 @@ import CommentForm from '../comments/comment-form';
 // Create a GraphQL query for the comment list.
 const commentQuery = gql`
 query($postId: ID!) {
-    comments(first: 1000, where: { contentId: $postId, contentStatus: PUBLISH, orderby: COMMENT_DATE, order: ASC }) {
+    comments(first: 100, where: { contentId: $postId, contentStatus: PUBLISH, orderby: COMMENT_DATE, order: DESC }) {
       nodes {
           ...CommentFields
       }
